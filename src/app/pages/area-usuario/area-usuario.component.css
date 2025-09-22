@@ -1,0 +1,11 @@
+.tab-btn {
+    @apply inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-md text-[#711EAA] hover:bg-purple-50 border border-transparent bg-transparent transition-colors;
+}
+
+.tab-btn--ativa {
+    @apply border-[#711EAA] text-[#3D0A5E] bg-white shadow-sm;
+}
+
+.tab-btn--disabled {
+    @apply opacity-60 cursor-not-allowed;
+}

@@ -1,0 +1,96 @@
+<section class="min-h-[100svh] w-full lg:grid lg:grid-cols-2">
+  <div
+    class="hidden lg:flex items-center justify-center bg-gradient-to-br from-[#A839F7] via-[#7D63F9] to-[#52A2F7] text-white px-10 lg:border-r lg:border-white/20">
+    <div class="w-full max-w-lg">
+      <h2 class="text-2xl md:text-3xl font-bold font-glacial tracking-tight drop-shadow-sm">
+        Somos mais que uma empresa
+      </h2>
+      <p class="mt-4 max-w-md text-sm/6 md:text-base/7 text-white/90">
+        Apoiar arquitetos e designers de interiores, simplificando o trabalho através de extensa biblioteca BIM e
+        ampliando o conhecimento através de educação contínua e promoção de uma comunidade colaborativa — sempre com
+        inspiração e inovação.
+      </p>
+    </div>
+  </div>
+
+  <div class="bg-white grid grid-rows-[auto,1fr]">
+    <header class="px-6 md:px-12 pt-4 md:pt-6">
+      <a routerLink="/"
+        class="block w-fit mx-auto focus-visible:outline focus-visible:outline-2 focus-visible:outline-purple-600 rounded-md">
+        <img src="/assets/logos/logo-3d.png" alt="ARCAbee 3D Studio" class="h-40 w-auto">
+      </a>
+    </header>
+
+    <main class="px-6 md:px-12 pb-10 flex items-center">
+      <div class="w-full max-w-md mx-auto">
+        <h1 class="text-2xl md:text-3xl font-bold font-glacial tracking-tight text-gray-900">
+          Acesse sua conta
+        </h1>
+
+        <div *ngIf="erroLogin" class="mt-4 flex items-center gap-2 rounded-xl bg-red-50 border border-red-200 p-3">
+          <i class="fa-solid fa-circle-exclamation text-red-700 text-lg"></i>
+          <p class="text-sm text-red-700 font-medium">
+            {{ erroLogin }}
+          </p>
+        </div>
+
+        <form class="mt-6 space-y-4" [formGroup]="formulario" (ngSubmit)="fazerLogin()" novalidate>
+          <div class="group">
+            <label for="usuario"
+              class="block text-sm font-medium text-gray-700 transition-colors duration-150 group-focus-within:text-purple-700">Usuário</label>
+            <input type="text" id="usuario" formControlName="usuario" placeholder="Digite seu usuário"
+              autocomplete="username"
+              class="mt-1 block w-full rounded-xl border bg-gray-100 px-3 py-2 text-gray-900 shadow-sm focus:outline-none focus:ring-2"
+              [ngClass]="{
+                'border-gray-300 focus:border-purple-600 focus:ring-purple-600': !campoInvalido('usuario'),
+                'border-red-500 focus:border-red-600 focus:ring-red-600': campoInvalido('usuario')
+              }" />
+            <p *ngIf="campoErro('usuario','required')" class="mt-1 text-xs text-red-600">Informe seu usuário.</p>
+            <p *ngIf="campoErro('usuario','minlength')" class="mt-1 text-xs text-red-600">Mínimo de 3 caracteres.</p>
+            <p *ngIf="campoErro('usuario','maxlength')" class="mt-1 text-xs text-red-600">Máximo de 30 caracteres.</p>
+            <p *ngIf="campoErro('usuario','pattern')" class="mt-1 text-xs text-red-600">Use apenas letras, números e . _
+              -</p>
+          </div>
+
+          <div class="group">
+            <label for="senha"
+              class="block text-sm font-medium text-gray-700 transition-colors duration-150 group-focus-within:text-purple-700">Senha</label>
+            <input type="password" id="senha" formControlName="senha" placeholder="Digite sua senha"
+              autocomplete="current-password"
+              class="mt-1 block w-full rounded-xl border bg-gray-100 px-3 py-2 text-gray-900 shadow-sm focus:outline-none focus:ring-2"
+              [ngClass]="{
+                'border-gray-300 focus:border-purple-600 focus:ring-purple-600': !campoInvalido('senha'),
+                'border-red-500 focus:border-red-600 focus:ring-red-600': campoInvalido('senha')
+              }" />
+            <p *ngIf="campoErro('senha','required')" class="mt-1 text-xs text-red-600">Informe sua senha.</p>
+            <p *ngIf="campoErro('senha','minlength')" class="mt-1 text-xs text-red-600">Mínimo de 8 caracteres.</p>
+            <p *ngIf="campoErro('senha','maxlength')" class="mt-1 text-xs text-red-600">Máximo de 128 caracteres.</p>
+          </div>
+
+          <div class="pt-2">
+            <button type="submit"
+              class="w-full inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-br from-[#A839F7] via-[#7D63F9] to-[#52A2F7] px-5 py-2.5 text-sm font-semibold text-white shadow hover:from-purple-700 hover:to-purple-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-purple-600 transition-colors duration-200 font-glacial"
+              [class.opacity-60]="enviando">
+              Login
+            </button>
+
+            <div class="mt-3 flex items-center justify-between text-xs">
+              <a routerLink="/redefinir-senha"
+                class="text-gray-600 hover:text-gray-800 underline underline-offset-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-purple-600 rounded-sm">
+                Esqueceu a senha?
+              </a>
+
+              <div class="flex items-center gap-2">
+                <span class="text-gray-600">Você não tem uma conta?</span>
+                <a routerLink="/cadastro"
+                  class="inline-flex items-center rounded-full bg-white px-3 py-1.5 text-xs font-semibold text-purple-700 shadow ring-1 ring-black/5 hover:bg-purple-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-purple-600 transition-colors duration-200 font-glacial">
+                  Criar conta
+                </a>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+  </div>
+</section>

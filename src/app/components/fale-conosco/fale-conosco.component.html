@@ -1,0 +1,83 @@
+<section class="py-16 bg-gradient-to-r from-purple-200 via-purple-100 to-blue-100">
+  <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+    <div class="flex flex-col items-start space-y-4">
+      <div class="flex items-center gap-3">
+        <div class="bg-purple-600 p-3 rounded-lg text-white text-3xl">
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+        <div>
+          <h3 class="text-2xl font-bold text-purple-700 font-glacial">Envie sua mensagem</h3>
+          <p class="text-gray-700">Nosso email <br><span class="font-medium">arcabee&#64;arcabee.com</span></p>
+        </div>
+      </div>
+    </div>
+
+    <form [formGroup]="formulario" (ngSubmit)="enviarMensagem()"
+      class="bg-white/70 backdrop-blur-md rounded-2xl p-6 shadow-lg w-full">
+      <h3 class="text-2xl font-bold text-purple-700 mb-6 font-glacial">Fale conosco</h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+        <div>
+          <input type="text" formControlName="nome" placeholder="Seu nome"
+            class="w-full rounded-xl border bg-gray-100 px-3 py-2 text-gray-900 shadow-sm focus:outline-none focus:ring-2"
+            [ngClass]="{
+              'border-gray-300 focus:border-purple-600 focus:ring-purple-600': !campoInvalido('nome'),
+              'border-red-500 focus:border-red-600 focus:ring-red-600': campoInvalido('nome')
+            }" />
+          <p *ngIf="campoErro('nome','required')" class="mt-1 text-xs text-red-600">Informe seu nome.</p>
+          <p *ngIf="campoErro('nome','minlength')" class="mt-1 text-xs text-red-600">O nome deve ter ao menos 2
+            caracteres.</p>
+          <p *ngIf="campoErro('nome','maxlength')" class="mt-1 text-xs text-red-600">O nome pode ter no máximo 60
+            caracteres.</p>
+        </div>
+
+        <div>
+          <input type="text" formControlName="sobrenome" placeholder="Seu sobrenome"
+            class="w-full rounded-xl border bg-gray-100 px-3 py-2 text-gray-900 shadow-sm focus:outline-none focus:ring-2"
+            [ngClass]="{
+              'border-gray-300 focus:border-purple-600 focus:ring-purple-600': !campoInvalido('sobrenome'),
+              'border-red-500 focus:border-red-600 focus:ring-red-600': campoInvalido('sobrenome')
+            }" />
+          <p *ngIf="campoErro('sobrenome','required')" class="mt-1 text-xs text-red-600">Informe seu sobrenome.</p>
+          <p *ngIf="campoErro('sobrenome','minlength')" class="mt-1 text-xs text-red-600">O sobrenome deve ter ao menos
+            2 caracteres.</p>
+          <p *ngIf="campoErro('sobrenome','maxlength')" class="mt-1 text-xs text-red-600">O sobrenome pode ter no máximo
+            60 caracteres.</p>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <input type="email" formControlName="email" placeholder="Seu email" autocomplete="email"
+          class="w-full rounded-xl border bg-gray-100 px-3 py-2 text-gray-900 shadow-sm focus:outline-none focus:ring-2"
+          [ngClass]="{
+            'border-gray-300 focus:border-purple-600 focus:ring-purple-600': !campoInvalido('email'),
+            'border-red-500 focus:border-red-600 focus:ring-red-600': campoInvalido('email')
+          }" />
+        <p *ngIf="campoErro('email','required')" class="mt-1 text-xs text-red-600">Informe seu email.</p>
+        <p *ngIf="campoErro('email','email')" class="mt-1 text-xs text-red-600">Informe um email válido.</p>
+        <p *ngIf="campoErro('email','maxlength')" class="mt-1 text-xs text-red-600">O email é muito longo.</p>
+      </div>
+
+      <div class="mb-6">
+        <textarea formControlName="mensagem" rows="4" placeholder="Sua mensagem"
+          class="w-full rounded-xl border bg-gray-100 px-3 py-2 text-gray-900 shadow-sm focus:outline-none focus:ring-2"
+          [ngClass]="{
+            'border-gray-300 focus:border-purple-600 focus:ring-purple-600': !campoInvalido('mensagem'),
+            'border-red-500 focus:border-red-600 focus:ring-red-600': campoInvalido('mensagem')
+          }"></textarea>
+        <p *ngIf="campoErro('mensagem','required')" class="mt-1 text-xs text-red-600">Escreva sua mensagem.</p>
+        <p *ngIf="campoErro('mensagem','minlength')" class="mt-1 text-xs text-red-600">A mensagem deve ter ao menos 10
+          caracteres.</p>
+        <p *ngIf="campoErro('mensagem','maxlength')" class="mt-1 text-xs text-red-600">A mensagem é muito longa.</p>
+      </div>
+
+      <button type="submit"
+        class="w-full flex justify-center items-center gap-2 bg-gradient-to-br from-[#A839F7] via-[#7D63F9] to-[#52A2F7] text-white font-glacial font-semibold py-2 px-4 rounded-lg hover:from-purple-700 hover:to-purple-500 transition">
+        <span *ngIf="!enviando; else carregando">Enviar Mensagem</span>
+        <ng-template #carregando>
+          <span>ENVIANDO...</span>
+        </ng-template>
+      </button>
+    </form>
+  </div>
+</section>

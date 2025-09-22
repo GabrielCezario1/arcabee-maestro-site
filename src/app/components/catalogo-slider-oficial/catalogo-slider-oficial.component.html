@@ -1,0 +1,16 @@
+<section class="pb-4 bg-purple-600 imagem-fundo">
+  <swiper-container slides-per-view="7" space-between="20" loop="true" navigation="true" class="flex-1 pt-2"
+    [breakpoints]="{
+        '320': { slidesPerView: 1, spaceBetween: 10 },
+        '480': { slidesPerView: 2, spaceBetween: 15 },
+        '768': { slidesPerView: 3, spaceBetween: 20 },
+        '1024': { slidesPerView: 5, spaceBetween: 20 },
+        '1280': { slidesPerView: 7, spaceBetween: 20 }
+      }">
+    @for(slide of itens; track slide;){
+    <swiper-slide class="rounded-xl h-48 flex items-center justify-center overflow-hidden">
+      <img [src]="slide.url" [alt]="slide?.alt" class="object-contain h-full w-full">
+    </swiper-slide>
+    }
+  </swiper-container>
+</section>

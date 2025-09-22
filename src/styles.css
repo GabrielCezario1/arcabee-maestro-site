@@ -1,1 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'ngx-toastr/toastr';
+
+.imagem-fundo {
+    background-image: url('/assets/visuais/fundo-cabecalho.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+swiper-container::part(button-prev) {
+    font-family: "Font Awesome 5 Free";
+    content: "\f054";
+    color: #711EAA;
+}
+
+swiper-container::part(button-next) {
+    font-family: "Font Awesome 5 Free";
+    content: "\f054";
+    color: #711EAA;
+}
+
+@font-face {
+    font-family: 'Glacial Indifference';
+    src: url('/assets/fonts/GlacialIndifference-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Glacial Indifference';
+    src: url('/assets/fonts/GlacialIndifference-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@layer utilities {
+    .min-h-screen-minus-footer {
+        min-height: calc(100svh - var(--footer-h, 0px));
+    }
+}

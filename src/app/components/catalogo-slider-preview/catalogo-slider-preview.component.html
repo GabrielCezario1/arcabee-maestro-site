@@ -1,0 +1,23 @@
+<section class="pb-6">
+  <swiper-container slides-per-view="7" space-between="20" loop="true" navigation="true" class="flex-1 pt-4"
+    [breakpoints]="{
+        '320': { slidesPerView: 1, spaceBetween: 10 },
+        '480': { slidesPerView: 2, spaceBetween: 15 },
+        '768': { slidesPerView: 3, spaceBetween: 20 },
+        '1024': { slidesPerView: 5, spaceBetween: 20 },
+        '1280': { slidesPerView: 7, spaceBetween: 20 }
+      }">
+    @for(slide of itens; track slide;){
+    <swiper-slide class="rounded-xl h-60 flex items-center justify-center overflow-hidden">
+      <img [src]="slide.url" [alt]="slide?.alt" class="object-contain h-full w-full">
+    </swiper-slide>
+    }
+  </swiper-container>
+
+  <div class="flex justify-center">
+    <button
+      class="bg-gradient-to-br from-[#A839F7] via-[#7D63F9] to-[#52A2F7] hover:from-purple-700 hover:to-purple-500 text-xs text-white font-glacial font-semibold px-6 py-2 rounded-full shadow-lg">
+      <i class="fas fa-location-arrow mr-2"></i> VER CATÁLOGO COMPLETO
+    </button>
+  </div>
+</section>

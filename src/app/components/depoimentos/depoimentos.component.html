@@ -1,0 +1,87 @@
+<section class="relative bg-gray-50 py-10 md:py-16">
+  <div class="mx-auto max-w-6xl px-4 md:px-6">
+    <div class="relative flex items-stretch" (touchstart)="onTouchStart($event)" (touchend)="onTouchEnd($event)">
+
+      <button type="button" (click)="voltar()"
+        class="hidden md:flex select-none group mr-4 w-24 shrink-0 items-center justify-center rounded-3xl bg-white/70 ring-1 ring-black/5 hover:bg-white transition"
+        aria-label="Anterior">
+        <svg class="h-7 w-7 text-purple-600 transition group-hover:scale-110" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M15 18l-6-6 6-6" />
+        </svg>
+      </button>
+
+      <div class="relative w-full">
+        <div class="relative mx-auto max-w-3xl rounded-3xl bg-white p-6 md:p-10 shadow-lg ring-1 ring-black/5">
+          <div class="relative overflow-hidden min-h-[360px] md:min-h-[380px]">
+            <div [@slide]="depoimentoAtivo" [@.disabled]="animacaoDesabilitada">
+              <ng-container *ngFor="let depoimento of depoimentos; let i = index; trackBy: trackByIndex">
+                <div *ngIf="i === depoimentoAtivo" class="relative">
+
+                  <img *ngIf="depoimento.avatarUrl" [src]="depoimento.avatarUrl" alt=""
+                    class="mx-auto mb-4 md:mb-5 h-16 w-16 md:h-20 md:w-20 rounded-full object-cover ring-4 ring-white shadow" />
+
+                  <div class="text-center" aria-live="polite">
+                    <h3 class="text-2xl font-bold font-glacial tracking-tight text-purple-700 md:text-3xl">
+                      {{ depoimento.nome }}
+                    </h3>
+                    <p class="mt-1 font-glacial text-sm text-gray-500 md:text-base" *ngIf="depoimento.empresa">
+                      {{ depoimento.empresa }}
+                    </p>
+
+                    <blockquote class="mt-5 text-sm leading-relaxed text-gray-600 md:text-base">
+                      {{ depoimento.depoimento }}
+                    </blockquote>
+
+                    <div class="mx-auto my-4 h-1 w-16 rounded-full bg-amber-400 md:my-5"></div>
+
+                    <a *ngIf="depoimento.botaoLabel" [href]="depoimento.botaoRedirect || '#'"
+                      class="inline-flex items-center gap-2 rounded-full bg-gradient-to-br from-[#A839F7] via-[#7D63F9] to-[#52A2F7] px-4 py-2 text-xs font-semibold font-glacial text-white shadow hover:from-purple-700 hover:to-purple-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-purple-600 md:text-sm">
+                      <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-white/20">
+                        <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M7 17L17 7" />
+                          <path d="M8 7h9v9" />
+                        </svg>
+                      </span>
+                      {{ depoimento.botaoLabel }}
+                    </a>
+                  </div>
+                </div>
+              </ng-container>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button type="button" (click)="avancar()"
+        class="hidden md:flex select-none group ml-4 w-24 shrink-0 items-center justify-center rounded-3xl bg-white/70 ring-1 ring-black/5 hover:bg-white transition"
+        aria-label="Próximo">
+        <svg class="h-7 w-7 text-purple-600 transition group-hover:scale-110" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 18l6-6-6-6" />
+        </svg>
+      </button>
+
+
+      <div class="absolute inset-x-0 -bottom-6 flex items-center justify-center gap-4 md:hidden">
+        <button type="button" (click)="voltar()"
+          class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white shadow ring-1 ring-black/5"
+          aria-label="Anterior">
+          <svg class="h-5 w-5 text-purple-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 18l-6-6 6-6" />
+          </svg>
+        </button>
+        <button type="button" (click)="avancar()"
+          class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white shadow ring-1 ring-black/5"
+          aria-label="Próximo">
+          <svg class="h-5 w-5 text-purple-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 18l6-6-6-6" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

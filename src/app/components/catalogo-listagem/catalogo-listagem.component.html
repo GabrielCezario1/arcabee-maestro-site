@@ -1,0 +1,119 @@
+<section #catalogTop class="min-h-[100svh] w-full bg-gray-50 scroll-mt-16">
+  <div class="mx-auto w-full max-w-[1280px] px-4 md:px-6 lg:px-8 py-6 md:py-8">
+    <div class="flex items-center justify-between gap-4">
+      <h1 class="text-3xl md:text-4xl font-bold font-glacial tracking-tight text-gray-900">
+        Produtos
+      </h1>
+    </div>
+
+    <form class="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3" [formGroup]="filtroForm"
+      (ngSubmit)="$event.preventDefault()">
+      <div class="group">
+        <label class="sr-only">Selecionar marca</label>
+        <select formControlName="marca"
+          class="w-full rounded-xl border border-gray-300 bg-gray-100 px-3 py-2 text-sm text-gray-900 shadow-sm focus:outline-none focus:border-purple-600 focus:ring-2 focus:ring-purple-600">
+          <option [ngValue]="null" selected>Selecionar marca</option>
+          <option *ngFor="let m of marcas" [ngValue]="m">{{ m }}</option>
+        </select>
+      </div>
+
+      <div class="group">
+        <label class="sr-only">Selecionar Linha</label>
+        <select formControlName="linha"
+          class="w-full rounded-xl border border-gray-300 bg-gray-100 px-3 py-2 text-sm text-gray-900 shadow-sm focus:outline-none focus:border-purple-600 focus:ring-2 focus:ring-purple-600">
+          <option [ngValue]="null" selected>Selecionar Linha</option>
+          <option *ngFor="let l of linhas" [ngValue]="l">{{ l }}</option>
+        </select>
+      </div>
+
+      <div class="group">
+        <label class="sr-only">Selecionar tipo</label>
+        <select formControlName="tipo"
+          class="w-full rounded-xl border border-gray-300 bg-gray-100 px-3 py-2 text-sm text-gray-900 shadow-sm focus:outline-none focus:border-purple-600 focus:ring-2 focus:ring-purple-600">
+          <option [ngValue]="null" selected>Selecionar tipo</option>
+          <option *ngFor="let t of tipos" [ngValue]="t">{{ t }}</option>
+        </select>
+      </div>
+
+      <div class="group">
+        <label for="q" class="sr-only">Buscar produto</label>
+        <div class="relative">
+          <input id="q" type="text" placeholder="Buscar produto" formControlName="busca"
+            class="w-full rounded-xl border border-gray-300 bg-gray-100 pl-10 pr-3 py-2 text-sm text-gray-900 shadow-sm focus:outline-none focus:border-purple-600 focus:ring-2 focus:ring-purple-600" />
+          <svg class="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-500"
+            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M21 21l-4.35-4.35M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15z" />
+          </svg>
+        </div>
+      </div>
+    </form>
+
+    <div class="mt-5">
+      <div *ngIf="carregando" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+        <div *ngFor="let sk of [].constructor(15); let i = index" class="rounded-xl bg-gray-100 animate-pulse h-52">
+        </div>
+      </div>
+
+      <div *ngIf="!carregando" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+        <article *ngFor="let p of produtos; trackBy: trackById"
+          class="rounded-xl border border-gray-200 bg-white shadow-sm">
+          <div class="relative w-full pb-[80%] rounded-t-xl overflow-hidden">
+            <div class="absolute inset-2 rounded-xl" [style.background-color]="p.cor"></div>
+          </div>
+
+          <div class="px-2 pb-2">
+            <h3 class="text-[13px] font-semibold text-gray-900 line-clamp-1">{{ p.nome }}</h3>
+
+            <div class="mt-1 grid grid-cols-2 gap-x-2 text-[11px] leading-5">
+              <div class="text-purple-700">
+                <a class="hover:underline cursor-default">Marca</a><br>
+                <a class="hover:underline cursor-default">Linha</a><br>
+                <a class="hover:underline cursor-default">Tipo</a><br>
+                <a class="hover:underline cursor-default">Acabamento</a>
+              </div>
+              <div class="text-gray-700 text-right pr-1">
+                {{ p.marca }}<br>
+                {{ p.linha }}<br>
+                {{ p.tipo }}<br>
+                {{ p.acabamento }}
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div *ngIf="!carregando" class="mt-6 flex items-center justify-center gap-2 text-sm">
+        <button type="button" (click)="paginaAnterior()"
+          class="h-8 w-8 rounded-full grid place-items-center text-purple-700 hover:bg-purple-50 disabled:text-gray-300 disabled:hover:bg-transparent"
+          [disabled]="currentPage === 1">‹</button>
+
+        <ng-container *ngFor="let p of pageList()">
+          <button *ngIf="p !== '...'; else dots" type="button" (click)="irPara(p)"
+            class="h-8 w-8 rounded-full grid place-items-center"
+            [ngClass]="{ 'bg-[#711EAA] text-white shadow': p === currentPage, 'text-purple-700 hover:bg-purple-50': p !== currentPage }">
+            {{ p }}
+          </button>
+          <ng-template #dots><span class="h-8 w-8 grid place-items-center text-gray-400">…</span></ng-template>
+        </ng-container>
+
+        <button type="button" (click)="proximaPagina()"
+          class="h-8 w-8 rounded-full grid place-items-center text-purple-700 hover:bg-purple-50 disabled:text-gray-300 disabled:hover:bg-transparent"
+          [disabled]="currentPage === totalPages()">›</button>
+      </div>
+
+      <div *ngIf="!carregando" class="mt-6 md:mt-6 flex flex-col items-center">
+        <img src="/assets/logos/logo-roxo.png" alt="ARCAbee 3D Studio" class="h-28 w-auto">
+
+        <a routerLink="/assine"
+          class="mt-4 inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-br from-[#A839F7] via-[#7D63F9] to-[#52A2F7] px-6 py-2.5 text-sm font-semibold text-white shadow ring-1 ring-black/5 hover:from-purple-700 hover:to-purple-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-purple-600 transition-colors duration-200 cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 -ml-1" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M7 7h10v10" />
+          </svg>
+          <span class="font-glacial tracking-wide">ASSINE JÁ</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,65 @@
+<footer class="bg-purple-600 text-white px-6 py-10 imagem-fundo">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+    <div class="self-center">
+      <img src="assets/logos/mini-logo.png" alt="Logo Arcabee" class="h-20 w-auto">
+    </div>
+
+    <div class="flex flex-col items-start gap-4">
+      <p class="text-sm">© 2024 Arcabee. Todos os direitos reservados.<br>
+        ArcaBee 3D Studio LTDA
+      </p>
+      <div class="space-y-2 text-sm">
+        <p class="flex items-center gap-2">
+          <i class="fa-solid fa-location-dot"></i>
+          Vila Velha - ES
+        </p>
+        <p class="flex items-center gap-2">
+          <i class="fa-solid fa-phone"></i>
+          +55 (27) 99228-2944
+        </p>
+        <p class="flex items-center gap-2">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:contato@arcabee.com.br" class="underline">
+            contato&#64;arcabee.com.br
+          </a>
+        </p>
+      </div>
+      <span><a routerLink="/termos-de-uso" class="text-sm mt-2">TERMOS DE USO</a> | <a
+          routerLink="/politica-privacidade" class="text-sm mt-2">POLÍTICAS DE PRIVACIDADE</a></span>
+    </div>
+
+    <div class="flex flex-col gap-4">
+      <div>
+        <p class="font-medium">Acompanhe nossas redes sociais</p>
+        <div class="flex gap-2 text-3xl">
+          <a href="#" class="hover:text-gray-200">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" class="hover:text-gray-200">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="#" class="hover:text-gray-200">
+            <i class="fa-brands fa-pinterest"></i>
+          </a>
+          <a href="#" class="hover:text-gray-200">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+      <div>
+        <p class="font-medium mb-1">Receba insights BIM mensais</p>
+        <form class="flex gap-2 flex-col w-80" [formGroup]="formulario" (ngSubmit)="assinar()">
+          <input type="email" name="email" placeholder="Seu email" autocomplete="email" formControlName="email"
+            class="w-full rounded-xl border border-gray-300 bg-gray-100 px-3 py-2 text-gray-900 shadow-sm focus:outline-none focus:border-purple-600 focus:ring-2 focus:ring-purple-600" />
+          <button type="submit"
+            class="self-center bg-gradient-to-br from-[#A839F7] via-[#7D63F9] to-[#52A2F7] text-xs text-white font-semibold font-glacial px-4 py-2 rounded-full shadow-lg hover:from-purple-700 hover:to-purple-500">
+            <span *ngIf="!enviando; else carregando">ASSINAR</span>
+            <ng-template #carregando>
+              <span class="inline-flex items-center gap-2">ENVIANDO...</span>
+            </ng-template>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</footer>
