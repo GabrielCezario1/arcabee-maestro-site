@@ -8,10 +8,9 @@ import { IDepoimento } from '../models/depoimentos.model';
 export class DepoimentosService {
 
     private readonly http = inject(HttpClient);
-    private readonly urlBase = environment.apiBaseUrl;
+    private readonly urlBase = environment.apiBaseUrl + "/depoimentos";
 
-    recuperarDepoimentos(): Observable<IDepoimento[]> {
-        const url = `${this.urlBase}/depoimentos`;
-        return this.http.get<IDepoimento[]>(url);
+    recuperarDepoimentos(): Observable<IDepoimento[]> { 
+        return this.http.get<IDepoimento[]>(this.urlBase);
     }
 }

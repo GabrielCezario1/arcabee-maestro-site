@@ -1,0 +1,1082 @@
+[
+    {
+        "id": 1,
+        "nome": "Lord 01",
+        "marca": "Arauco",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "Matt",
+        "cor": "#2F3440"
+    },
+    {
+        "id": 2,
+        "nome": "Oceano 01",
+        "marca": "Duratex",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "Matt",
+        "cor": "#214C54"
+    },
+    {
+        "id": 3,
+        "nome": "Sal Rosa 01",
+        "marca": "Eucatex",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "TX",
+        "cor": "#E9C9C3"
+    },
+    {
+        "id": 4,
+        "nome": "Sálvia 01",
+        "marca": "Sudati",
+        "linha": "Cores",
+        "tipo": "MDP",
+        "acabamento": "Matt",
+        "cor": "#6A7D5D"
+    },
+    {
+        "id": 5,
+        "nome": "Verde Jade 01",
+        "marca": "Arauco",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "Essence",
+        "cor": "#A6C0A9"
+    },
+    {
+        "id": 6,
+        "nome": "Ébano 01",
+        "marca": "Duratex",
+        "linha": "Madeirados",
+        "tipo": "MDF",
+        "acabamento": "Chess",
+        "cor": "#1F1F21"
+    },
+    {
+        "id": 7,
+        "nome": "Azul Sereno 01",
+        "marca": "Eucatex",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "Matt",
+        "cor": "#B8BDCC"
+    },
+    {
+        "id": 8,
+        "nome": "Beige 01",
+        "marca": "Sudati",
+        "linha": "Essentials",
+        "tipo": "MDF",
+        "acabamento": "TX",
+        "cor": "#D7CFC7"
+    },
+    {
+        "id": 9,
+        "nome": "Beton 01",
+        "marca": "Arauco",
+        "linha": "Urban",
+        "tipo": "MDF",
+        "acabamento": "Matt",
+        "cor": "#BFC2C3"
+    },
+    {
+        "id": 10,
+        "nome": "Cacau 01",
+        "marca": "Duratex",
+        "linha": "Madeirados",
+        "tipo": "MDP",
+        "acabamento": "Chess",
+        "cor": "#8B6A62"
+    },
+    {
+        "id": 11,
+        "nome": "Cafelatte 01",
+        "marca": "Eucatex",
+        "linha": "Essentials",
+        "tipo": "MDF",
+        "acabamento": "Sethos",
+        "cor": "#C9B6A7"
+    },
+    {
+        "id": 12,
+        "nome": "Canela 01",
+        "marca": "Sudati",
+        "linha": "Madeirados",
+        "tipo": "MDF",
+        "acabamento": "Matt",
+        "cor": "#816B5C"
+    },
+    {
+        "id": 13,
+        "nome": "Cinza Cristal 01",
+        "marca": "Arauco",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "TX",
+        "cor": "#C9CACC"
+    },
+    {
+        "id": 14,
+        "nome": "Cinza Puro 01",
+        "marca": "Duratex",
+        "linha": "Cores",
+        "tipo": "MDP",
+        "acabamento": "Matt",
+        "cor": "#B8BBBF"
+    },
+    {
+        "id": 15,
+        "nome": "Connect 01",
+        "marca": "Eucatex",
+        "linha": "Urban",
+        "tipo": "MDF",
+        "acabamento": "TX",
+        "cor": "#B9A293"
+    },
+    {
+        "id": 16,
+        "nome": "Lord 02",
+        "marca": "Arauco",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "Matt",
+        "cor": "#343945"
+    },
+    {
+        "id": 17,
+        "nome": "Oceano 02",
+        "marca": "Duratex",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "Matt",
+        "cor": "#26585F"
+    },
+    {
+        "id": 18,
+        "nome": "Sal Rosa 02",
+        "marca": "Eucatex",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "TX",
+        "cor": "#E3B9B2"
+    },
+    {
+        "id": 19,
+        "nome": "Sálvia 02",
+        "marca": "Sudati",
+        "linha": "Cores",
+        "tipo": "MDP",
+        "acabamento": "Matt",
+        "cor": "#7A8E6A"
+    },
+    {
+        "id": 20,
+        "nome": "Verde Jade 02",
+        "marca": "Arauco",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "Essence",
+        "cor": "#B6CFB8"
+    },
+    {
+        "id": 21,
+        "nome": "Ébano 02",
+        "marca": "Duratex",
+        "linha": "Madeirados",
+        "tipo": "MDF",
+        "acabamento": "Chess",
+        "cor": "#262629"
+    },
+    {
+        "id": 22,
+        "nome": "Azul Sereno 02",
+        "marca": "Eucatex",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "Matt",
+        "cor": "#C7CBD7"
+    },
+    {
+        "id": 23,
+        "nome": "Beige 02",
+        "marca": "Sudati",
+        "linha": "Essentials",
+        "tipo": "MDF",
+        "acabamento": "TX",
+        "cor": "#E1D8CF"
+    },
+    {
+        "id": 24,
+        "nome": "Beton 02",
+        "marca": "Arauco",
+        "linha": "Urban",
+        "tipo": "MDF",
+        "acabamento": "Matt",
+        "cor": "#CACCCC"
+    },
+    {
+        "id": 25,
+        "nome": "Cacau 02",
+        "marca": "Duratex",
+        "linha": "Madeirados",
+        "tipo": "MDP",
+        "acabamento": "Chess",
+        "cor": "#7D5F57"
+    },
+    {
+        "id": 26,
+        "nome": "Cafelatte 02",
+        "marca": "Eucatex",
+        "linha": "Essentials",
+        "tipo": "MDF",
+        "acabamento": "Sethos",
+        "cor": "#D6C3B4"
+    },
+    {
+        "id": 27,
+        "nome": "Canela 02",
+        "marca": "Sudati",
+        "linha": "Madeirados",
+        "tipo": "MDF",
+        "acabamento": "Matt",
+        "cor": "#6F5C4E"
+    },
+    {
+        "id": 28,
+        "nome": "Cinza Cristal 02",
+        "marca": "Arauco",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "TX",
+        "cor": "#D5D6D8"
+    },
+    {
+        "id": 29,
+        "nome": "Cinza Puro 02",
+        "marca": "Duratex",
+        "linha": "Cores",
+        "tipo": "MDP",
+        "acabamento": "Matt",
+        "cor": "#C6C9CD"
+    },
+    {
+        "id": 30,
+        "nome": "Connect 02",
+        "marca": "Eucatex",
+        "linha": "Urban",
+        "tipo": "MDF",
+        "acabamento": "TX",
+        "cor": "#C7B3A6"
+    },
+    {
+        "id": 31,
+        "nome": "Lord 03",
+        "marca": "Arauco",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "Matt",
+        "cor": "#3A4050"
+    },
+    {
+        "id": 32,
+        "nome": "Oceano 03",
+        "marca": "Duratex",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "Matt",
+        "cor": "#2B666E"
+    },
+    {
+        "id": 33,
+        "nome": "Sal Rosa 03",
+        "marca": "Eucatex",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "TX",
+        "cor": "#DCABA4"
+    },
+    {
+        "id": 34,
+        "nome": "Sálvia 03",
+        "marca": "Sudati",
+        "linha": "Cores",
+        "tipo": "MDP",
+        "acabamento": "Matt",
+        "cor": "#879C75"
+    },
+    {
+        "id": 35,
+        "nome": "Verde Jade 03",
+        "marca": "Arauco",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "Essence",
+        "cor": "#C5DBC6"
+    },
+    {
+        "id": 36,
+        "nome": "Ébano 03",
+        "marca": "Duratex",
+        "linha": "Madeirados",
+        "tipo": "MDF",
+        "acabamento": "Chess",
+        "cor": "#2D2D30"
+    },
+    {
+        "id": 37,
+        "nome": "Azul Sereno 03",
+        "marca": "Eucatex",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "Matt",
+        "cor": "#D5D9E3"
+    },
+    {
+        "id": 38,
+        "nome": "Beige 03",
+        "marca": "Sudati",
+        "linha": "Essentials",
+        "tipo": "MDF",
+        "acabamento": "TX",
+        "cor": "#E9E0D7"
+    },
+    {
+        "id": 39,
+        "nome": "Beton 03",
+        "marca": "Arauco",
+        "linha": "Urban",
+        "tipo": "MDF",
+        "acabamento": "Matt",
+        "cor": "#D6D8D8"
+    },
+    {
+        "id": 40,
+        "nome": "Cacau 03",
+        "marca": "Duratex",
+        "linha": "Madeirados",
+        "tipo": "MDP",
+        "acabamento": "Chess",
+        "cor": "#6E514A"
+    },
+    {
+        "id": 41,
+        "nome": "Cafelatte 03",
+        "marca": "Eucatex",
+        "linha": "Essentials",
+        "tipo": "MDF",
+        "acabamento": "Sethos",
+        "cor": "#E2D1C3"
+    },
+    {
+        "id": 42,
+        "nome": "Canela 03",
+        "marca": "Sudati",
+        "linha": "Madeirados",
+        "tipo": "MDF",
+        "acabamento": "Matt",
+        "cor": "#5F4E42"
+    },
+    {
+        "id": 43,
+        "nome": "Cinza Cristal 03",
+        "marca": "Arauco",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "TX",
+        "cor": "#E1E2E4"
+    },
+    {
+        "id": 44,
+        "nome": "Cinza Puro 03",
+        "marca": "Duratex",
+        "linha": "Cores",
+        "tipo": "MDP",
+        "acabamento": "Matt",
+        "cor": "#D3D6DA"
+    },
+    {
+        "id": 45,
+        "nome": "Connect 03",
+        "marca": "Eucatex",
+        "linha": "Urban",
+        "tipo": "MDF",
+        "acabamento": "TX",
+        "cor": "#D5C3B8"
+    },
+    {
+        "id": 46,
+        "nome": "Lord 04",
+        "marca": "Arauco",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "Matt",
+        "cor": "#40475A"
+    },
+    {
+        "id": 47,
+        "nome": "Oceano 04",
+        "marca": "Duratex",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "Matt",
+        "cor": "#32747D"
+    },
+    {
+        "id": 48,
+        "nome": "Sal Rosa 04",
+        "marca": "Eucatex",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "TX",
+        "cor": "#D59E97"
+    },
+    {
+        "id": 49,
+        "nome": "Sálvia 04",
+        "marca": "Sudati",
+        "linha": "Cores",
+        "tipo": "MDP",
+        "acabamento": "Matt",
+        "cor": "#95AA81"
+    },
+    {
+        "id": 50,
+        "nome": "Verde Jade 04",
+        "marca": "Arauco",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "Essence",
+        "cor": "#D3E6D3"
+    },
+    {
+        "id": 51,
+        "nome": "Ébano 04",
+        "marca": "Duratex",
+        "linha": "Madeirados",
+        "tipo": "MDF",
+        "acabamento": "Chess",
+        "cor": "#343437"
+    },
+    {
+        "id": 52,
+        "nome": "Azul Sereno 04",
+        "marca": "Eucatex",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "Matt",
+        "cor": "#E2E6EF"
+    },
+    {
+        "id": 53,
+        "nome": "Beige 04",
+        "marca": "Sudati",
+        "linha": "Essentials",
+        "tipo": "MDF",
+        "acabamento": "TX",
+        "cor": "#F1E9E0"
+    },
+    {
+        "id": 54,
+        "nome": "Beton 04",
+        "marca": "Arauco",
+        "linha": "Urban",
+        "tipo": "MDF",
+        "acabamento": "Matt",
+        "cor": "#E1E2E2"
+    },
+    {
+        "id": 55,
+        "nome": "Cacau 04",
+        "marca": "Duratex",
+        "linha": "Madeirados",
+        "tipo": "MDP",
+        "acabamento": "Chess",
+        "cor": "#5F453F"
+    },
+    {
+        "id": 56,
+        "nome": "Cafelatte 04",
+        "marca": "Eucatex",
+        "linha": "Essentials",
+        "tipo": "MDF",
+        "acabamento": "Sethos",
+        "cor": "#EDE0D3"
+    },
+    {
+        "id": 57,
+        "nome": "Canela 04",
+        "marca": "Sudati",
+        "linha": "Madeirados",
+        "tipo": "MDF",
+        "acabamento": "Matt",
+        "cor": "#503F35"
+    },
+    {
+        "id": 58,
+        "nome": "Cinza Cristal 04",
+        "marca": "Arauco",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "TX",
+        "cor": "#EAECEE"
+    },
+    {
+        "id": 59,
+        "nome": "Cinza Puro 04",
+        "marca": "Duratex",
+        "linha": "Cores",
+        "tipo": "MDP",
+        "acabamento": "Matt",
+        "cor": "#E0E3E7"
+    },
+    {
+        "id": 60,
+        "nome": "Connect 04",
+        "marca": "Eucatex",
+        "linha": "Urban",
+        "tipo": "MDF",
+        "acabamento": "TX",
+        "cor": "#E2D2C8"
+    },
+    {
+        "id": 61,
+        "nome": "Lord 05",
+        "marca": "Arauco",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "Matt",
+        "cor": "#464E65"
+    },
+    {
+        "id": 62,
+        "nome": "Oceano 05",
+        "marca": "Duratex",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "Matt",
+        "cor": "#39828B"
+    },
+    {
+        "id": 63,
+        "nome": "Sal Rosa 05",
+        "marca": "Eucatex",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "TX",
+        "cor": "#CD918A"
+    },
+    {
+        "id": 64,
+        "nome": "Sálvia 05",
+        "marca": "Sudati",
+        "linha": "Cores",
+        "tipo": "MDP",
+        "acabamento": "Matt",
+        "cor": "#A3B78D"
+    },
+    {
+        "id": 65,
+        "nome": "Verde Jade 05",
+        "marca": "Arauco",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "Essence",
+        "cor": "#E1F2E1"
+    },
+    {
+        "id": 66,
+        "nome": "Ébano 05",
+        "marca": "Duratex",
+        "linha": "Madeirados",
+        "tipo": "MDF",
+        "acabamento": "Chess",
+        "cor": "#3B3B3F"
+    },
+    {
+        "id": 67,
+        "nome": "Azul Sereno 05",
+        "marca": "Eucatex",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "Matt",
+        "cor": "#EEF2FB"
+    },
+    {
+        "id": 68,
+        "nome": "Beige 05",
+        "marca": "Sudati",
+        "linha": "Essentials",
+        "tipo": "MDF",
+        "acabamento": "TX",
+        "cor": "#F8F2EA"
+    },
+    {
+        "id": 69,
+        "nome": "Beton 05",
+        "marca": "Arauco",
+        "linha": "Urban",
+        "tipo": "MDF",
+        "acabamento": "Matt",
+        "cor": "#ECEDED"
+    },
+    {
+        "id": 70,
+        "nome": "Cacau 05",
+        "marca": "Duratex",
+        "linha": "Madeirados",
+        "tipo": "MDP",
+        "acabamento": "Chess",
+        "cor": "#503A34"
+    },
+    {
+        "id": 71,
+        "nome": "Cafelatte 05",
+        "marca": "Eucatex",
+        "linha": "Essentials",
+        "tipo": "MDF",
+        "acabamento": "Sethos",
+        "cor": "#F6EBE0"
+    },
+    {
+        "id": 72,
+        "nome": "Canela 05",
+        "marca": "Sudati",
+        "linha": "Madeirados",
+        "tipo": "MDF",
+        "acabamento": "Matt",
+        "cor": "#43352C"
+    },
+    {
+        "id": 73,
+        "nome": "Cinza Cristal 05",
+        "marca": "Arauco",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "TX",
+        "cor": "#F2F4F6"
+    },
+    {
+        "id": 74,
+        "nome": "Cinza Puro 05",
+        "marca": "Duratex",
+        "linha": "Cores",
+        "tipo": "MDP",
+        "acabamento": "Matt",
+        "cor": "#EEF1F5"
+    },
+    {
+        "id": 75,
+        "nome": "Connect 05",
+        "marca": "Eucatex",
+        "linha": "Urban",
+        "tipo": "MDF",
+        "acabamento": "TX",
+        "cor": "#EEDFD6"
+    },
+    {
+        "id": 76,
+        "nome": "Areia 01",
+        "marca": "Arauco",
+        "linha": "Essentials",
+        "tipo": "MDF",
+        "acabamento": "Matt",
+        "cor": "#DCCFBD"
+    },
+    {
+        "id": 77,
+        "nome": "Grafite 01",
+        "marca": "Duratex",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "Matt",
+        "cor": "#555A61"
+    },
+    {
+        "id": 78,
+        "nome": "Neblina 01",
+        "marca": "Eucatex",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "TX",
+        "cor": "#D9DEE2"
+    },
+    {
+        "id": 79,
+        "nome": "Terracota 01",
+        "marca": "Sudati",
+        "linha": "Cores",
+        "tipo": "MDP",
+        "acabamento": "Essence",
+        "cor": "#B56E55"
+    },
+    {
+        "id": 80,
+        "nome": "Duna 01",
+        "marca": "Arauco",
+        "linha": "Essentials",
+        "tipo": "MDF",
+        "acabamento": "TX",
+        "cor": "#C9B7A1"
+    },
+    {
+        "id": 81,
+        "nome": "Areia 02",
+        "marca": "Arauco",
+        "linha": "Essentials",
+        "tipo": "MDF",
+        "acabamento": "Matt",
+        "cor": "#E5DACB"
+    },
+    {
+        "id": 82,
+        "nome": "Grafite 02",
+        "marca": "Duratex",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "Matt",
+        "cor": "#636973"
+    },
+    {
+        "id": 83,
+        "nome": "Neblina 02",
+        "marca": "Eucatex",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "TX",
+        "cor": "#E6EBEF"
+    },
+    {
+        "id": 84,
+        "nome": "Terracota 02",
+        "marca": "Sudati",
+        "linha": "Cores",
+        "tipo": "MDP",
+        "acabamento": "Essence",
+        "cor": "#C57C61"
+    },
+    {
+        "id": 85,
+        "nome": "Duna 02",
+        "marca": "Arauco",
+        "linha": "Essentials",
+        "tipo": "MDF",
+        "acabamento": "TX",
+        "cor": "#D7C6B1"
+    },
+    {
+        "id": 86,
+        "nome": "Areia 03",
+        "marca": "Arauco",
+        "linha": "Essentials",
+        "tipo": "MDF",
+        "acabamento": "Matt",
+        "cor": "#EEE5D9"
+    },
+    {
+        "id": 87,
+        "nome": "Grafite 03",
+        "marca": "Duratex",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "Matt",
+        "cor": "#727884"
+    },
+    {
+        "id": 88,
+        "nome": "Neblina 03",
+        "marca": "Eucatex",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "TX",
+        "cor": "#F2F6FA"
+    },
+    {
+        "id": 89,
+        "nome": "Terracota 03",
+        "marca": "Sudati",
+        "linha": "Cores",
+        "tipo": "MDP",
+        "acabamento": "Essence",
+        "cor": "#D3896D"
+    },
+    {
+        "id": 90,
+        "nome": "Duna 03",
+        "marca": "Arauco",
+        "linha": "Essentials",
+        "tipo": "MDF",
+        "acabamento": "TX",
+        "cor": "#E6D8C6"
+    },
+    {
+        "id": 91,
+        "nome": "Areia 04",
+        "marca": "Arauco",
+        "linha": "Essentials",
+        "tipo": "MDF",
+        "acabamento": "Matt",
+        "cor": "#F6F0E7"
+    },
+    {
+        "id": 92,
+        "nome": "Grafite 04",
+        "marca": "Duratex",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "Matt",
+        "cor": "#7F8692"
+    },
+    {
+        "id": 93,
+        "nome": "Neblina 04",
+        "marca": "Eucatex",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "TX",
+        "cor": "#FBFEFF"
+    },
+    {
+        "id": 94,
+        "nome": "Terracota 04",
+        "marca": "Sudati",
+        "linha": "Cores",
+        "tipo": "MDP",
+        "acabamento": "Essence",
+        "cor": "#E29679"
+    },
+    {
+        "id": 95,
+        "nome": "Duna 04",
+        "marca": "Arauco",
+        "linha": "Essentials",
+        "tipo": "MDF",
+        "acabamento": "TX",
+        "cor": "#F2E6D7"
+    },
+    {
+        "id": 96,
+        "nome": "Areia 05",
+        "marca": "Arauco",
+        "linha": "Essentials",
+        "tipo": "MDF",
+        "acabamento": "Matt",
+        "cor": "#FFFAF2"
+    },
+    {
+        "id": 97,
+        "nome": "Grafite 05",
+        "marca": "Duratex",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "Matt",
+        "cor": "#8E96A3"
+    },
+    {
+        "id": 98,
+        "nome": "Neblina 05",
+        "marca": "Eucatex",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "TX",
+        "cor": "#FFFFFF"
+    },
+    {
+        "id": 99,
+        "nome": "Terracota 05",
+        "marca": "Sudati",
+        "linha": "Cores",
+        "tipo": "MDP",
+        "acabamento": "Essence",
+        "cor": "#F0A383"
+    },
+    {
+        "id": 100,
+        "nome": "Duna 05",
+        "marca": "Arauco",
+        "linha": "Essentials",
+        "tipo": "MDF",
+        "acabamento": "TX",
+        "cor": "#FFF3E5"
+    },
+    {
+        "id": 101,
+        "nome": "Cinza Urbano 01",
+        "marca": "Arauco",
+        "linha": "Urban",
+        "tipo": "MDF",
+        "acabamento": "Matt",
+        "cor": "#9BA0A6"
+    },
+    {
+        "id": 102,
+        "nome": "Carvalho 01",
+        "marca": "Duratex",
+        "linha": "Madeirados",
+        "tipo": "MDF",
+        "acabamento": "Essence",
+        "cor": "#BCA082"
+    },
+    {
+        "id": 103,
+        "nome": "Amêndoa 01",
+        "marca": "Eucatex",
+        "linha": "Madeirados",
+        "tipo": "MDP",
+        "acabamento": "TX",
+        "cor": "#A7896D"
+    },
+    {
+        "id": 104,
+        "nome": "Pérola 01",
+        "marca": "Sudati",
+        "linha": "Essentials",
+        "tipo": "MDF",
+        "acabamento": "Matt",
+        "cor": "#E8E3D6"
+    },
+    {
+        "id": 105,
+        "nome": "Oliva 01",
+        "marca": "Arauco",
+        "linha": "Cores",
+        "tipo": "MDP",
+        "acabamento": "Matt",
+        "cor": "#6E7C55"
+    },
+    {
+        "id": 106,
+        "nome": "Acquamarine 01",
+        "marca": "Duratex",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "Matt",
+        "cor": "#8FB7B3"
+    },
+    {
+        "id": 107,
+        "nome": "Gelo 01",
+        "marca": "Eucatex",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "TX",
+        "cor": "#DDE3E7"
+    },
+    {
+        "id": 108,
+        "nome": "Cimento 01",
+        "marca": "Sudati",
+        "linha": "Urban",
+        "tipo": "MDF",
+        "acabamento": "Matt",
+        "cor": "#B3B6B8"
+    },
+    {
+        "id": 109,
+        "nome": "Carvalho 02",
+        "marca": "Duratex",
+        "linha": "Madeirados",
+        "tipo": "MDF",
+        "acabamento": "Essence",
+        "cor": "#C8AD90"
+    },
+    {
+        "id": 110,
+        "nome": "Amêndoa 02",
+        "marca": "Eucatex",
+        "linha": "Madeirados",
+        "tipo": "MDP",
+        "acabamento": "TX",
+        "cor": "#B49476"
+    },
+    {
+        "id": 111,
+        "nome": "Pérola 02",
+        "marca": "Sudati",
+        "linha": "Essentials",
+        "tipo": "MDF",
+        "acabamento": "Matt",
+        "cor": "#F1ECE0"
+    },
+    {
+        "id": 112,
+        "nome": "Oliva 02",
+        "marca": "Arauco",
+        "linha": "Cores",
+        "tipo": "MDP",
+        "acabamento": "Matt",
+        "cor": "#809063"
+    },
+    {
+        "id": 113,
+        "nome": "Acquamarine 02",
+        "marca": "Duratex",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "Matt",
+        "cor": "#9EC7C3"
+    },
+    {
+        "id": 114,
+        "nome": "Gelo 02",
+        "marca": "Eucatex",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "TX",
+        "cor": "#E9EEF2"
+    },
+    {
+        "id": 115,
+        "nome": "Cimento 02",
+        "marca": "Sudati",
+        "linha": "Urban",
+        "tipo": "MDF",
+        "acabamento": "Matt",
+        "cor": "#C1C4C6"
+    },
+    {
+        "id": 116,
+        "nome": "Carvalho 03",
+        "marca": "Duratex",
+        "linha": "Madeirados",
+        "tipo": "MDF",
+        "acabamento": "Essence",
+        "cor": "#D6BDA2"
+    },
+    {
+        "id": 117,
+        "nome": "Amêndoa 03",
+        "marca": "Eucatex",
+        "linha": "Madeirados",
+        "tipo": "MDP",
+        "acabamento": "TX",
+        "cor": "#C29E82"
+    },
+    {
+        "id": 118,
+        "nome": "Pérola 03",
+        "marca": "Sudati",
+        "linha": "Essentials",
+        "tipo": "MDF",
+        "acabamento": "Matt",
+        "cor": "#FBF6EC"
+    },
+    {
+        "id": 119,
+        "nome": "Oliva 03",
+        "marca": "Arauco",
+        "linha": "Cores",
+        "tipo": "MDP",
+        "acabamento": "Matt",
+        "cor": "#92A271"
+    },
+    {
+        "id": 120,
+        "nome": "Acquamarine 03",
+        "marca": "Duratex",
+        "linha": "Cores",
+        "tipo": "MDF",
+        "acabamento": "Matt",
+        "cor": "#AED6D2"
+    }
+]

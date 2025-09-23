@@ -1,7 +1,7 @@
 export interface IDepoimento {
     nome: string;
     empresa?: string;
-    depoimento: string;
+    descricaoDepoimento: string;
     avatarUrl?: string;
     botaoLabel?: string;
     botaoRedirect?: string;

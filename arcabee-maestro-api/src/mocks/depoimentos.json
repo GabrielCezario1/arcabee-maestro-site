@@ -1,0 +1,26 @@
+[
+    {
+        "nome": "Adriana Baccari",
+        "empresa": "Baccari Interiores",
+        "avatarUrl": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&h=200&fit=crop",
+        "depoimento": "Falar da Arcabee é falar de uma empresa gentil, de uma profissional de Arquitetura disciplinada, tecnicamente preparada e comprometida com os processos do trabalho. Organizada e extremamente cuidadosa com suas entregas, foi muito importante sua participação nos nossos projetos para o sucesso desses no tempo em que esteve conosco. Com toda certeza, é uma profissional preparada para os desafios da Arquitetura, sendo uma mestra na tecnologia BIM e em RVT, pois tem no DNA comprometimento com qualidade — algo que para nós é imprescindível.",
+        "botaoLabel": "BIM não precisa ser complicado!",
+        "botaoRedirect": "#"
+    },
+    {
+        "nome": "Marcos Oliveira",
+        "empresa": "Studio M2 Arquitetura",
+        "avatarUrl": "https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=200&h=200&fit=crop&crop=faces",
+        "depoimento": "Trabalhar com a equipe foi um divisor de águas no nosso fluxo BIM. Em poucas semanas organizamos templates, padronizamos famílias e eliminamos retrabalhos nas compatibilizações. A comunicação é objetiva, os prazos são cumpridos e as entregas vêm sempre com um nível de detalhe que dá segurança para o cliente final.",
+        "botaoLabel": "Quero otimizar meu fluxo BIM",
+        "botaoRedirect": "#"
+    },
+    {
+        "nome": "Letícia Ramos",
+        "empresa": "Construtora Horizonte",
+        "avatarUrl": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=200&h=200&fit=crop&crop=faces",
+        "depoimento": "A implantação do BIM foi conduzida com muito cuidado e método. Recebemos uma biblioteca enxuta, bem documentada e treinamentos práticos que aceleraram o time. O suporte pós-implantação é ágil e resolveu dúvidas críticas do dia a dia. Hoje temos projetos mais consistentes e previsíveis.",
+        "botaoLabel": "Falar com um especialista",
+        "botaoRedirect": "#"
+    }
+]
