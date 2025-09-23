@@ -11,13 +11,23 @@ import { CatalogoSliderService } from '../../services/catalogo-slider.service';
 })
 export class CatalogoSliderOficialComponent implements OnInit {
 
-  itens: ICatalogoSliderItem[] = [];
+  itens: ICatalogoSliderItem[] = [
+    { url: '/assets/produtos/lenco-azul.png', alt: 'Lenço azul' },
+    { url: '/assets/produtos/espelho.png', alt: 'Espelho' },
+    { url: '/assets/produtos/duratex.png', alt: 'Duratex' },
+    { url: '/assets/produtos/poltrona-perola.png', alt: 'Poltrona pérola' },
+    { url: '/assets/produtos/suvinil.png', alt: 'Suvinil' },
+    { url: '/assets/produtos/mesa-centro.png', alt: 'Mesa de centro' },
+    { url: '/assets/produtos/marmore.png', alt: 'Mármore' },
+    { url: '/assets/produtos/busto-expositor.png', alt: 'Busto expositor' },
+  ];
+
   carregando = false;
 
   constructor(private readonly catalogoSliderService: CatalogoSliderService) { }
 
   ngOnInit() {
-    this.carregarOficial();
+    //this.carregarOficial();
   }
 
   private carregarOficial(): void {
