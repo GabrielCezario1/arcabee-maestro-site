@@ -25,9 +25,9 @@ export class CatalogoListagemComponent implements OnInit, OnDestroy {
   pageSize = 12;
   currentPage = 1;
 
-  marcas: string[] = ['Arauco', 'Duratex', 'Eucatex', 'Sudati'];
-  linhas: string[] = ['Cores', 'Madeirados', 'Urban', 'Essentials'];
-  tipos: string[] = ['MDF', 'MDP', 'HDF'];
+  marcas: string[] = [];
+  linhas: string[] = [];
+  tipos: string[] = [];
 
   private destroy$ = new Subject<void>();
   private onResize = () => this.setPageSizeByWidth(window.innerWidth);
@@ -40,6 +40,7 @@ export class CatalogoListagemComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.filtroForm = this.fb.group(PRODUTOS_FORM_CONFIG);
 
+    this.PreencherFiltros();
     this.filtroForm.get('marca')?.valueChanges
       .pipe(takeUntil(this.destroy$))
       .subscribe(() => { this.currentPage = 1; this.buscar(); });
@@ -62,6 +63,16 @@ export class CatalogoListagemComponent implements OnInit, OnDestroy {
     this.buscar();
   }
 
+  PreencherFiltros() {
+    this.produtosService.preencherFiltros().subscribe({
+      next: (resp) => {
+        this.marcas = resp.marcas ?? [];
+        this.linhas = resp.linhas ?? [];
+        this.tipos = resp.tipos ?? [];
+      }
+    });
+  }
+
   ngOnDestroy(): void {
     window.removeEventListener('resize', this.onResize);
     this.destroy$.next();
@@ -80,13 +91,13 @@ export class CatalogoListagemComponent implements OnInit, OnDestroy {
       Marca: this.filtroForm.get('marca')?.value || null,
       Linha: this.filtroForm.get('linha')?.value || null,
       Tipo: this.filtroForm.get('tipo')?.value || null,
-      Busca: (this.filtroForm.get('busca')?.value || null)?.toString().trim() || null
+      Nome: (this.filtroForm.get('busca')?.value || null)?.toString().trim() || null
     });
 
     this.produtosService.pesquisar(req).pipe(takeUntil(this.destroy$)).subscribe({
       next: (resp) => {
-        this.total = resp?.Total ?? 0;
-        this.produtos = resp?.Registros ?? [];
+        this.total = resp?.total ?? 0;
+        this.produtos = resp?.registros ?? [];
         const totalPages = this.totalPages();
         if (this.currentPage > totalPages) {
           this.currentPage = totalPages;

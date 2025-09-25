@@ -1,9 +1,9 @@
 export class PaginacaoResponse<T> {
-    Total?: number;
-    Registros?: Array<T>;
+    total?: number;
+    registros?: Array<T>;
 
     constructor(params: Partial<PaginacaoResponse<T>> = {}) {
-        this.Total = params.Total ?? 0;
-        this.Registros = params.Registros ?? [];
+        this.total = params.total ?? 0;
+        this.registros = params.registros ?? [];
     }
 }
