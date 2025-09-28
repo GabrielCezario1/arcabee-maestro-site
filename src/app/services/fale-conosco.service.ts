@@ -8,11 +8,9 @@ import { FaleConoscoRequest } from '../models/requests/fale-conosco.request';
 export class FaleConoscoService {
 
     private readonly http = inject(HttpClient);
-    private readonly urlBase = environment.apiBaseUrl;
-    private readonly recurso = 'fale-conosco';
+    private readonly urlBase = environment.apiBaseUrl + '/feedbacks';
 
     enviar(dados: FaleConoscoRequest): Observable<unknown> {
-        const url = `${this.urlBase}/${this.recurso}`;
-        return this.http.post(url, dados);
+        return this.http.post(this.urlBase, dados);
     }
 }
