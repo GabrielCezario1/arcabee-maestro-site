@@ -1,10 +1,12 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { ICatalogoSliderItem } from '../../models/catalogo-slider.model';
 import { CatalogoSliderService } from '../../services/catalogo-slider.service';
 
 @Component({
   selector: 'app-catalogo-slider-preview',
   standalone: true,
+  imports: [RouterModule],
   templateUrl: './catalogo-slider-preview.component.html',
   styleUrls: ['./catalogo-slider-preview.component.css'],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
@@ -24,7 +26,7 @@ export class CatalogoSliderPreviewComponent implements OnInit {
   constructor(private readonly catalogoSliderService: CatalogoSliderService) { }
 
   ngOnInit() {
-   // this.carregarPreview();
+    // this.carregarPreview();
   }
 
   private carregarPreview(): void {

@@ -35,7 +35,7 @@
 
                     <div class="mx-auto my-4 h-1 w-16 rounded-full bg-amber-400 md:my-5"></div>
 
-                    <a *ngIf="depoimento.botaoLabel" [href]="depoimento.botaoRedirect || '#'"
+                    <a *ngIf="depoimento.botaoLabel" [href]="depoimento.botaoRedirect || '#pricing'" (click)="irParaPricing($event)"
                       class="inline-flex items-center gap-2 rounded-full bg-gradient-to-br from-[#A839F7] via-[#7D63F9] to-[#52A2F7] px-4 py-2 text-xs font-semibold font-glacial text-white shadow hover:from-purple-700 hover:to-purple-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-purple-600 md:text-sm">
                       <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-white/20">
                         <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"

@@ -68,8 +68,10 @@ export class HeaderComponent implements OnInit {
 
   obterIniciais(usuario?: IUsuarioLogado | null): string {
     if (!usuario) return '';
-    const n = `${usuario.nome ?? ''} ${usuario.sobrenome ?? ''}`.trim();
-    const partes = n.split(/\s+/).filter(Boolean);
+    const nomeCompleto = (
+      `${usuario.nome ?? ''} ${usuario.sobrenome ?? ''}`.trim() || (usuario as any)?.usuarioDescricao || ''
+    ).trim();
+    const partes = nomeCompleto.split(/\s+/).filter(Boolean);
     const a = partes[0]?.[0] ?? '';
     const b = partes.length > 1 ? partes[partes.length - 1][0] : '';
     return (a + b).toUpperCase();

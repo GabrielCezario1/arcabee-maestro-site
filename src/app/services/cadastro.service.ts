@@ -8,11 +8,10 @@ import { CadastroRequest } from '../models/requests/cadastro.request';
 export class CadastroService {
 
     private readonly http = inject(HttpClient);
-    private readonly urlBase = environment.apiBaseUrl;
-    private readonly recurso = 'cadastro';
+    private readonly urlBase = environment.apiBaseUrl + "/usuarios";
 
     cadastrar(dados: CadastroRequest): Observable<unknown> {
-        const url = `${this.urlBase}/${this.recurso}`;
+        const url = `${this.urlBase}`;
         return this.http.post(url, dados);
     }
 }

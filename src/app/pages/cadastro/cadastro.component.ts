@@ -66,7 +66,7 @@ export class CadastroComponent implements OnInit {
     const req = new CadastroRequest({
       Nome: String(this.formulario.get('nome')?.value ?? '').trim(),
       Sobrenome: String(this.formulario.get('sobrenome')?.value ?? '').trim(),
-      Usuario: String(this.formulario.get('usuario')?.value ?? '').trim(),
+      Login: String(this.formulario.get('usuario')?.value ?? '').trim(),
       Email: String(this.formulario.get('email')?.value ?? '').trim(),
       Senha: String(this.formulario.get('senha')?.value ?? '')
     });

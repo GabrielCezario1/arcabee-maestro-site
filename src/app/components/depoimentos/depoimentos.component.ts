@@ -1,4 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
 import { animate, group, query, style, transition, trigger } from '@angular/animations';
 import { IDepoimento } from '../../models/depoimentos.model';
 import { CommonModule } from '@angular/common';
@@ -52,7 +53,8 @@ export class DepoimentosComponent implements OnInit {
   depoimentos: IDepoimento[] = [];
 
   constructor(
-    private readonly depoimentosService: DepoimentosService
+    private readonly depoimentosService: DepoimentosService,
+    private readonly viewportScroller: ViewportScroller
   ) { }
 
   ngOnInit() {
@@ -114,5 +116,10 @@ export class DepoimentosComponent implements OnInit {
 
   trackByIndex(i: number): number {
     return i;
+  }
+
+  irParaPricing(event?: Event): void {
+    event?.preventDefault();
+    this.viewportScroller.scrollToAnchor('pricing');
   }
 }

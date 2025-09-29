@@ -1,6 +1,7 @@
 import { Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 import { debounceTime, distinctUntilChanged, Subject, takeUntil } from 'rxjs';
 import { IProduto } from '../../models/produtos.model';
 import { RecuperarProdutosRequest } from '../../models/requests/recuperar-produtos.request';
@@ -12,7 +13,7 @@ import { ProdutosService } from '../../services/produtos.service';
   standalone: true,
   templateUrl: './catalogo-listagem.component.html',
   styleUrls: ['./catalogo-listagem.component.css'],
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule, RouterModule],
 })
 export class CatalogoListagemComponent implements OnInit, OnDestroy {
   @ViewChild('catalogTop') catalogTop?: ElementRef<HTMLElement>;
